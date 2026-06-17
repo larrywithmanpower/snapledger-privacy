@@ -32,23 +32,28 @@
   <p class="updated">最後更新：2026-06-17</p>
 
   <h2>資料蒐集</h2>
-  <p>本 App 不蒐集任何可識別個人身分的資料。所有記帳交易、語音辨識結果、發票照片、分類設定皆儲存於使用者裝置本機 SwiftData 資料庫，不上傳任何伺服器。</p>
+  <p>本 App 不建立帳號、不蒐集可識別您身分的資料。所有記帳交易、分類設定與歷史紀錄皆儲存於您裝置本機的 SwiftData 資料庫。</p>
 
-  <h2>語音辨識</h2>
-  <p>語音輸入使用 Apple 內建 SFSpeechRecognizer，100% 在裝置本機處理，不傳送至任何雲端服務。</p>
+  <h2>語音與影像 AI 辨識</h2>
+  <ul>
+    <li>語音轉文字使用 Apple 內建 SFSpeechRecognizer，在裝置本機處理。</li>
+    <li>多數語音記帳與電子發票 QR Code 辨識在本機完成，不傳送任何資料。</li>
+    <li>當本機無法辨識時（如複雜語句、無 QR Code 的紙本發票拍照辨識），App 會將<strong>該次的文字或影像</strong>傳送至我們的後端伺服器，並交由 Google Gemini 進行 AI 解析後回傳結果。此傳輸僅用於完成該次辨識，伺服器端不儲存您的內容、不與您的身分連結，亦不用於廣告或追蹤。</li>
+  </ul>
 
   <h2>iCloud 同步（Pro 功能）</h2>
-  <p>Pro 訂閱者啟用 iCloud 同步時，資料透過 Apple 私有 CloudKit 容器在使用者個人 iCloud 帳號下加密儲存，開發者無法存取。</p>
+  <p>Pro 訂閱者啟用 iCloud 同步時，資料透過 Apple 私有 CloudKit 容器在您個人 iCloud 帳號下加密儲存，開發者無法存取。</p>
 
   <h2>第三方服務</h2>
   <ul>
+    <li><strong>Google（Firebase / Gemini）</strong>：處理上述語音與影像的 AI 辨識請求。</li>
     <li><strong>Apple StoreKit</strong>：訂閱付款，由 Apple 處理。</li>
     <li><strong>台灣銀行公開匯率 API</strong>：僅 GET 公開匯率資料，不傳送使用者資訊。</li>
   </ul>
 
   <h2>聯絡方式</h2>
-  <p>如有任何疑問請聯繫：<a href="mailto:manpower0708@gmail.com">manpower0708@gmail.com</a></p>
+  <p>如有任何疑問請聯繫：<a href="mailto:__EMAIL__">__EMAIL__</a></p>
 
-  <footer>© 2026 Larry H · 隨口記帳 SnapLedger</footer>
+  <footer>© 2026 __COPYRIGHT_OWNER__ · 隨口記帳 SnapLedger</footer>
 </body>
 </html>
